@@ -38,5 +38,4 @@ require'lspconfig'.tsserver.setup{
   },
 }
 
--- You must make sure volar is setup
--- e.g. require'lspconfig'.volar.setup{}
+require'lspconfig'.volar.setup{}
