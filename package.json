@@ -1,0 +1,14 @@
+{
+  "name": "nvim",
+  "version": "1.0.0",
+  "description": "Customized from https://github.com/NvChad/NvChad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vue/typescript-plugin": "^2.0.19"
+  }
+}

@@ -16,11 +16,16 @@ for _, lsp in ipairs(servers) do
 end
 
 require'lspconfig'.tsserver.setup{
+  capabilities = capabilities,
+  on_attach = on_attach,
+  on_init = on_init,
   init_options = {
+    volar = { autoClosingTags = true, autoCreateQuotes = true },
+    vue = { autoInsert = { dotValue = true} },
     plugins = {
       {
         name = "@vue/typescript-plugin",
-        location = "/usr/local/lib/node_modules/@vue/typescript-plugin",
+        location = "../../node_modules/@vue/typescript-plugin",
         languages = {
           "javascript",
           "typescript",
@@ -31,11 +36,9 @@ require'lspconfig'.tsserver.setup{
   },
   filetypes = {
     "javascript",
-    "typescript",
-    "vue",
     "typescriptreact",
-    "typescript.tsx"
+    "typescript.tsx",
+    "vue"
   },
 }
 
-require'lspconfig'.volar.setup{}
