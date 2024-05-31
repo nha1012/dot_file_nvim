@@ -36,5 +36,3 @@ This configuration includes the following features optimized for frontend develo
 -   **Markdown Preview**: Preview your Markdown files directly within Neovim.
 -   **Enhanced Code Editing**: Includes plugins for better coding experience, such as autopairs, commenting, and Git integration.
 
-## Contact
-nguyenphucnha111@gmail.com
