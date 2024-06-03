@@ -48,18 +48,6 @@ map("n", "<leader>c", function()
   require("nvchad.tabufline").close_buffer()
 end, { desc = "buffer close" })
 
--- Comment
-map("n", "<leader>/", function()
-  require("Comment.api").toggle.linewise.current()
-end, { desc = "comment toggle" })
-
-map(
-  "v",
-  "<leader>/",
-  "<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>",
-  { desc = "comment toggle" }
-)
-
 -- nvimtree
 map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "nvimtree toggle window" })
 map("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "nvimtree focus window" })

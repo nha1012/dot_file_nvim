@@ -73,4 +73,10 @@ return {
       require('plugins.git.octo')
     end
   },
+  {
+    "terrortylor/nvim-comment",
+    config = function()
+      require('plugins.comment')
+    end
+  }
 }
