@@ -1,7 +1,6 @@
 return {
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
     config = function()
       require "configs.conform"
     end,
@@ -43,5 +42,35 @@ return {
   },
   {
     "kolen/tree-sitter-slim"
-  }
+  },
+  -- Lazy git
+  {
+    "kdheepak/lazygit.nvim",
+    cmd = {
+      "LazyGit",
+      "LazyGitCurrentFile",
+      "LazyGitFilterCurrentFile",
+      "LazyGitFilter",
+    },
+    keys = {
+      { "<Leader>gg", "<cmd>LazyGit<CR>", desc = "Open lazygit UI" },
+    },
+    config = function()
+      vim.g.lazygit_floating_window_scaling_factor = 0.9
+    end,
+  },
+  {
+    "pwntester/octo.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+      "nvim-tree/nvim-web-devicons",
+    },
+    cmd = {
+      "Octo",
+    },
+    config = function()
+      require('plugins.git.octo')
+    end
+  },
 }
