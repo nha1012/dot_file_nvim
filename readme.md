@@ -15,7 +15,14 @@ This Neovim configuration is customized from [NvChad](https://github.com/NvChad/
 2.  **Clone the Custom Configuration:**
     
     `git clone https://github.com/nha1012/nvim.git ~/.config/nvim` 
-    
+
+3.  **Install dependencies:**
+     
+    `cd ~/.config/nvim`
+    `npm install`
+
+3.  **Start vim:**
+    `nvim .`
 
 ## Uninstallation
 
@@ -32,7 +39,7 @@ This Neovim configuration is customized from [NvChad](https://github.com/NvChad/
 
 This configuration includes the following features optimized for frontend development:
 
--   **Vue.js and React.js support**: Syntax highlighting, linting, and auto-completion.
+-   **Vue, React, Angular,... support**: Syntax highlighting, linting, and auto-completion.
 -   **Markdown Preview**: Preview your Markdown files directly within Neovim.
 -   **Enhanced Code Editing**: Includes plugins for better coding experience, such as autopairs, commenting, and Git integration.
 

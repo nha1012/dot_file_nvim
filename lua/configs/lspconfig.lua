@@ -38,7 +38,8 @@ require'lspconfig'.tsserver.setup{
     "javascript",
     "typescriptreact",
     "typescript.tsx",
-    "vue"
+    "vue",
+    "typescript"
   },
 }
 

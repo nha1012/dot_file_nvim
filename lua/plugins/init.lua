@@ -8,7 +8,7 @@ return {
   {
     "catppuccin/nvim", name = "catppuccin", priority = 1000,
     config = function ()
-      require('configs.catppuccin')
+      require "configs.catppuccin"
     end
   },
   -- These are some examples, uncomment them if you want to see them work!
